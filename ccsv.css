@@ -1,0 +1,89 @@
+/* mainIN.css */
+
+/* Reset và cấu hình cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header chính - Tiêu đề "Chứng chỉ sinh viên" */
+header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  background-color: #005b94; /* Nền xanh đậm */
+  color: #ffffff;            /* Chữ trắng */
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+/* Bảng chính */
+.main__table {
+  overflow-x: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Bảng */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Tiêu đề bảng */
+.table thead {
+  background-color: #005b94;
+  color: white;
+}
+
+.table__head-row th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+}
+
+/* Các hàng header phụ */
+.chitiet-cell {
+  background-color: #005b94;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Dòng dữ liệu */
+.chungchi-row {
+  background-color: #fff;
+}
+
+.chungchi-cell {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Tùy chỉnh chiều cao nếu cần */
+.table th[rowspan] {
+  vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table,
+  .chungchi-cell,
+  .chitiet-cell {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    padding: 10px 16px;
+  }
+}
